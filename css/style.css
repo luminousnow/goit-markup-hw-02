@@ -1,18 +1,69 @@
-/* розібратись 1.20 .class.class */
-/* розібратись 1.33 підсвітка активної сторінки */
+/* .clas.class https://youtu.be/bn9yIxt_rtg?t=8054*/
+/* підсвітка активної сторінки https://youtu.be/bn9yIxt_rtg?t=8853*/
 
-/* Шрифт: основний #757575 */
-/* Шрифт: допоміжний #212121 */
-/* Шрифт: акцент #2196F3 */
-/* bgc main menu: #FFFFFF */
-/* bgc general: #FFFFFF */
-/* bgc secondary: #F5F4FA */
-/* bgc footer: #2F303A */
+/* Оформлены эффекты (изменение цвета текста) 
+наведения и фокусировки для интерактивных текстовых 
+элементов. Изменение фона и цвета иконок не делать. */
 
+/* колір шрифтів  */
+/* фон елементів + hover, focus*/
 /* 
-Выделена палитра цветов макета и для её хранения 
-использованы CSS-переменные. */
+визначити, підключити шрифти, призначити елементам 
+основні параметри шрифту
+
+bgc: #ffffff;
+color: var(--font-primary-color);
+
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+
+
+точкові параметри шрифту
+- menu items, hero, hero button, portfolio items...
+
+bgc: #ffffff;
+color: var(--font-primary-color);
+
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.71;
+text-align: center;
+letter-spacing: 0.03em;
+0.02em(menu items); 
+0.06em(hero, hero button, portfolio items);
+*/
+
+/* portfolio Фільтр як кнопки+шрифти і фон https://youtu.be/KM5r3qtBdxY?t=1167 */
+/* portfolio Картки робіт як посилання */
+/* portfolio шрифт, фон кнопки :inhiret */
+/* стиль лого на двох сторінках однаковий */
+
+/* text decoration none */
+/* list style none https://youtu.be/KM5r3qtBdxY?t=5238 */
+
+/* колір selection */
+
 :root {
+  --font-primary-color: #757575;
+  --font-secondary-color: #212121;
+
+  --font-active-button: #ffffff;
+  --font-pasive-button: #ffffff;
+
+  --font-active-element: #2196f3;
+  --font-pasive-element: #212121;
+
+  --bgc-menu: #ffffff;
+  --bgc-primary: #ffffff;
+  --bgc-secondary: #f5f4fa;
+  --bgc-footer: #2f303a;
+}
+
+.active:hover {
+}
+
+.sections .title {
 }
 
 /* General css */
@@ -20,9 +71,6 @@
 /* Header css */
 
 /* Menu css */
-/* Оформлены эффекты (изменение цвета текста) 
-наведения и фокусировки для интерактивных текстовых 
-элементов. Изменение фона и цвета иконок не делать. */
 
 /* Main css */
 
