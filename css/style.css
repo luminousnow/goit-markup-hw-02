@@ -5,6 +5,8 @@
 наведения и фокусировки для интерактивных текстовых 
 элементов. Изменение фона и цвета иконок не делать. */
 
+/* !!!! перевірити всі що активні і інтерактивні чи є ефект ручки */
+
 /* колір шрифтів  */
 /* фон елементів + hover, focus*/
 /* 
@@ -52,6 +54,7 @@ letter-spacing: 0.03em;
   --bgc-primary: #ffffff;
   --bgc-secondary: #f5f4fa;
   --bgc-footer: #2f303a;
+  --bgc-card-description: rgba(33, 150, 243, 0.9);
 
   --font-button: #ffffff;
   --bgc-button: #2196f3;
@@ -147,7 +150,8 @@ body {
 }
 
 /* change color Contact items */
-.header .contact:hover {
+.header .contact:hover,
+.header .contact:focus {
   color: var(--font-active-element);
 }
 
@@ -223,14 +227,17 @@ body {
   background-color: var(--bgc-footer);
 }
 
+/* change font style for address*/
 .address {
   font-style: normal;
 }
 
+/* change color style for tel.& email in address*/
 .footer .contact {
   color: var(--font-ftr-contact);
 }
 
+/* css options for social nets*/
 .social {
   font-weight: 700;
   font-size: 14px;
@@ -238,9 +245,51 @@ body {
   text-transform: uppercase;
 }
 
+/* css options for copiright text */
 .copiright {
   font-size: 12px;
   line-height: 2;
   text-align: center;
   color: var(--font-ftr-copiright);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-secondary-color);
+
+  background-color: var(--bgc-secondary);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--font-third-color);
+
+  background-color: var(--font-active-element);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--font-secondary-color);
+}
+
+.card-kinde {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--font-primary-color);
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--font-third-color);
+
+  background-color: var(--bgc-card-description);
 }
